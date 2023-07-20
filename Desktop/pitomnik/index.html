@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="IE=edge">
     <title>Питомник плодово-ягодный</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<div class="wrapper">
 <header class="page-header">
-    <a class="logo">
-        <img class="logo-image" src="img/Фон.png" width="300px" height="180px" alt="Логотип питомника плодово-ягодного">
-    </a>
-    <nav class="main-nav">
+        <div class="header-container">
+        <nav class="main-nav">
+                <a class="logo">
+                    <img src="./img/logo.png" width="250" height="130" alt="питомник садово-ягодный логотип">
+                </a>
         <button class="main-nav_toggle" type="button">Открыть меню</button>
-        <div class="main-nav_wrapper">
             <ul class="site-list">
             <li class="site-list-item site-list-item--active">
                 <a href="index.html">Главная</a>
@@ -32,39 +33,15 @@
                 <a href="#">Контакты</a>
             </li>
             </ul>
-        </div>
+    </div>
     </nav>
+</nav>
+<div class="header-bottom">
+    <p class="hours">с 8 до 20, ежедневно</p>
+    <p class="phone-number">7895204852</p>
+</div>
+</div>
 </header>
-<main class="page-main">
-    <main class="content">
-        <div class="container_index">
-        <section class="slider">
-            <div class="slider-controls">
-                <label for="product-3"></label>
-                <label for="product-2"></label>
-                <label for="product-1"></label>
-             </div>
-        <ul class="slides-switches">
-            <li class="slider-item slide" id="slide1">
-                <h3 class="slide-title">
-                    Крем-брюле и пломбир с малиновым джемом
-                </h3>
-                <a class="slide-button button" href="#"> Давайте оба!</a>
-            </li>
-            <li class="slider-item slide" id="slide2">
-                <h3 class="slide-title">
-                    Шоколадный пломбир и лимонный сорбет
-                </h3>
-                <a class="slide-button button" href="#"> Давайте оба!</a>
-            </li>
-            <li class="slider-item slide" id="slide3">
-                <h3 class="slide-title">
-                    Пломбир с помадкой и клубничный щербет
-                </h3>
-                <a class="slide-button button" href="#"> Давайте оба!</a>
-            </li>
-        </ul>
-        </section>
         <article class="hit">
             <ul class="variety">
                 <li class="hits">
@@ -144,6 +121,7 @@
              </div>
          </section>
         </main>
+    </div>
         <footer class="main-footer">
             <div class="wrapper">
             <div class="footer-social">
@@ -164,5 +142,6 @@
             </div>
             </div>
         </footer>
+    </div>
 </body>
 </html>

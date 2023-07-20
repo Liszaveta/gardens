@@ -1,22 +1,19 @@
-$color: #D0F0C0;
+
 body {
-    min-width: 320px;
     margin: 0;
     padding: 0;
     font-size: 18px;
     line-height: 27px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $main-font;
+    color: $text-color;
     background-color: $color;
 }
+a {
+    color: $text-color;
 
-@media (min-width: $tablet-width) {
-.logo {
-    order: 2;
-    height: 400px;
+    &:hover {
+        color: rgba(59, 168, 104, 0.868);;
+    }
 }
-}
-@media (min-width: $desktop-width) {
-.logo {
-    height: 648px;
-}
-}
+
+

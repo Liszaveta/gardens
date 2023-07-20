@@ -1,16 +1,50 @@
-.logo {
-    height: 85px;
+.wrapper{
+  max-width: 1290px;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0 auto;
 }
-.page-header {
+.page-header{
+    min-height: 740px;
+    width: 620px;
+    background-image: url("../img/backgroound.png");
+    background-repeat: no-repeat;
+    padding: 0 15px;
+}
+.header-container{
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+}
+
+.site-list{
     display: flex;
-    flex-direction: column;
-}
-.main-nav {
-    width: 320px;
-    margin: 0 auto;
-}
-.site-list {
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    column-gap: 30px;
+    font-size: 14px;
     list-style: none;
+    margin-left: 360px;
+    padding: 0;
+}
+.header-bottom{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 600px;
+  padding: 0px;
+  margin-left: 550px;
+}
+.hours{
+  margin: 0;
+}
+.phone-number{
+  margin: 0;
 }
