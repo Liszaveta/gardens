@@ -1,11 +1,10 @@
 .wrapper{
   max-width: 1290px;
-  background-color: #fff;
-  overflow: hidden;
+  background-color: $color;
   margin: 0 auto;
 }
 .page-header{
-    min-height: 740px;
+    min-height: 650px;
     width: 620px;
     background-image: url("../img/backgroound.png");
     background-repeat: no-repeat;
@@ -15,8 +14,7 @@
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   align-items: center;
 }
 .main-nav{
@@ -25,12 +23,11 @@
 }
 
 .site-list{
-    display: flex;
-    justify-content: space-between;
+  @include flex;
     column-gap: 30px;
     font-size: 14px;
     list-style: none;
-    margin-left: 360px;
+    margin-left: 470px;
     padding: 0;
 }
 .header-bottom{
@@ -41,10 +38,66 @@
   width: 600px;
   padding: 0px;
   margin-left: 550px;
+  padding-bottom: 30px;
 }
-.hours{
+.hours {
+  position: relative;
   margin: 0;
+  font-size: 16px;
+  color: $heading-color;
+  font-weight: 600;
+}
+.hours::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("../img/calendar.svg");
+  left: -30px;
+  top: -1px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: 0;
 }
 .phone-number{
+  position: relative;
   margin: 0;
+  font-size: 24px;
+  color: $heading-color;
+}
+.phone-number::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-phone.svg");
+  left: -35px;
+  top: 4px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 500px;
+  margin-left: 680px;
+  height: 165px;
+}
+.about-site {
+color: $heading-color;
+font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 20px;
+}
+.info{
+  color: $text-color;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0 auto;
 }
