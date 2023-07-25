@@ -1,0 +1,65 @@
+.hit{
+    max-width: 1290px;
+    padding: 80px 0;
+}
+.variety{
+@include flex;
+list-style: none;
+padding-left: 0;
+max-width: 1290px;
+}
+.hits{
+    position: relative;
+    word-wrap: normal;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+    }
+    .hits::before{ 
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 60px;
+        height: 60px;
+        content: "";
+        background-image: url("../img/хит2.png");
+        background-repeat: no-repeat;
+    } 
+.catalog_image {
+    width: 260px
+}
+.catalog_item {
+    color: #000000;
+    line-height: 22px;
+    font-size: 19px;
+    margin-top: 30px;
+}
+.price-main {
+    font-size: 29px;
+    height: 40px;
+    color: rgb(9, 9, 9);
+    position: absolute;
+    top: 260px;
+    left: 25px;
+}
+.price{
+    padding: 0;
+    margin-right: 30px;
+    font-size: 30px;
+}
+.price::after {
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 63px;
+    right: 4px;
+    width: 28px;
+    height: 35px;
+    content: "";
+    background-image: url("../img/ruble min.png");
+    background-repeat: no-repeat;
+}
+
+
