@@ -8,6 +8,7 @@ font-family: 'Work Sans', sans-serif;
 */
 .catalog {
   padding-top: 80px;
+  text-align: center;
 }
 
 .button-shop {
@@ -234,5 +235,34 @@ a:hover {
   height: 35px;
   content: "";
   background-image: url("../img/ruble min.png");
+  background-repeat: no-repeat;
+}
+
+.features-description {
+  font-size: 47px;
+}
+
+.video--description {
+  display: flex;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-text {
+  font-size: 15px;
+  position: relative;
+}
+
+.feature-text::before {
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: url("../img/сердце.png");
   background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
