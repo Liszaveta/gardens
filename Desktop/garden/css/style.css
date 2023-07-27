@@ -7,7 +7,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;
 */
 .catalog {
-  padding-top: 80px;
+  padding-top: 130px;
   text-align: center;
 }
 
@@ -79,9 +79,9 @@ a:hover {
   justify-content: space-between;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  font-size: 14px;
+  font-size: 16px;
   list-style: none;
-  margin-left: 470px;
+  margin-left: 420px;
   padding: 0;
 }
 
@@ -253,6 +253,7 @@ a:hover {
 .feature-text {
   font-size: 15px;
   position: relative;
+  text-align: center;
 }
 
 .feature-text::before {
@@ -265,4 +266,64 @@ a:hover {
   content: "";
   background-image: url("../img/сердце.png");
   background-repeat: no-repeat;
+}
+
+.map-wrapper {
+  padding-top: 90px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  height: 420px;
+  padding-bottom: 50px;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.recall {
+  z-index: 1;
+  position: absolute;
+  top: 60px;
+  right: 85px;
+  padding: 10px 13px;
+  width: 250px;
+  max-height: 305px;
+  background-color: #156963;
+  color: aliceblue;
+  border-radius: 15px;
+}
+
+.street {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.num {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  min-width: 180px;
+  padding: 0;
+}
+
+.documents {
+  max-width: 372px;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
