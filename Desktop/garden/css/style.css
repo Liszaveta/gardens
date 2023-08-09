@@ -508,21 +508,43 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.picture {
+  max-width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 60px;
 }
 
 .catalog-item {
-  position: relative;
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 13px;
   vertical-align: top;
   text-align: center;
   border: 1px solid rgba(204, 204, 204, 0.8);
+}
+
+.discount {
+  color: grey;
+  text-decoration-line: line-through;
+}
+
+.scale {
+  transition: 1.2s; /* Время эффекта */
+}
+
+.scale:hover {
+  transform: scale(1.5); /* Увеличиваем масштаб */
 }/*# sourceMappingURL=style.css.map */
