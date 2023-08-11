@@ -11,25 +11,25 @@ nextButton.addEventListener('click', showNextSlide);
 
 // Функция для показа предыдущего слайда
 function showPreviousSlide() {
-  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-  updateSlider();
+slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+updateSlider();
 }
 
 // Функция для показа следующего слайда
 function showNextSlide() {
-  slideIndex = (slideIndex + 1) % slideCount;
-  updateSlider();
+slideIndex = (slideIndex + 1) % slideCount;
+updateSlider();
 }
 
 // Функция для обновления отображения слайдера
 function updateSlider() {
-  slides.forEach((slide, index) => {
-    if (index === slideIndex) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
+slides.forEach((slide, index) => {
+if (index === slideIndex) {
+slide.style.display = 'block';
+} else {
+slide.style.display = 'none';
+}
+});
 }
 
 // Инициализация слайдера

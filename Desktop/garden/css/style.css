@@ -7,7 +7,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;
 */
 .catalog {
-  padding-top: 130px;
+  padding-top: 0px;
   text-align: center;
 }
 
@@ -52,12 +52,56 @@ a:hover {
   margin: 0 auto;
 }
 
+.logo {
+  z-index: 5;
+}
+
 .page-header {
-  min-height: 650px;
+  max-height: 800px;
   width: 620px;
-  background-image: url("../img/backgroound.png");
-  background-repeat: no-repeat;
   padding: 0 15px;
+}
+
+.slider-container {
+  position: relative;
+  min-height: 650px;
+  width: 560px;
+  margin: 0 auto;
+  overflow: hidden;
+  top: -410px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  color: white;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
 }
 
 .header-container {
@@ -72,6 +116,7 @@ a:hover {
 .main-nav {
   display: flex;
   align-items: center;
+  padding-top: 40px;
 }
 
 .site-list {
@@ -81,7 +126,7 @@ a:hover {
        column-gap: 30px;
   font-size: 16px;
   list-style: none;
-  margin-left: 420px;
+  margin-left: 450px;
   padding: 0;
 }
 
@@ -140,7 +185,7 @@ a:hover {
 .name {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding-top: 20px;
   width: 500px;
   margin-left: 680px;
   height: 165px;
@@ -207,7 +252,7 @@ a:hover {
   color: #000000;
   line-height: 22px;
   font-size: 19px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .price-main {
@@ -215,7 +260,7 @@ a:hover {
   height: 40px;
   color: rgb(9, 9, 9);
   position: absolute;
-  top: 260px;
+  top: 270px;
   left: 25px;
 }
 
