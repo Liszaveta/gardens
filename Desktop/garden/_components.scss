@@ -9,7 +9,7 @@ font-family: 'Work Sans', sans-serif;
     justify-content: space-between;
 }
 .catalog{
-    padding-top: 0px;
+    padding-top: 300px;
     text-align: center;
 }
 .button-shop{
@@ -28,6 +28,10 @@ font-family: 'Work Sans', sans-serif;
     background-image: url("../img/plant 1.png");
     background-repeat: no-repeat;
 }
-
+@mixin mediaTablet{
+    @media screen and (max-width: $tablet-width){
+        display: none;
+      }
+}
 
 

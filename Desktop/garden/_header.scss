@@ -1,26 +1,154 @@
 .wrapper{
-  max-width: 1290px;
+  max-width: 1240px;
   background-color: $color;
   margin: 0 auto;
+  overflow: hidden;
+  @media screen and (max-width: $tablet-width){
+    width: 999px;}
 }
-.logo{
+
+
+.page-header{
+    box-sizing: border-box;
+    height:auto;
+    padding: 0 15px;
+    overflow: visible;
+    @media screen and (max-width: $tablet-width){
+      width: 450px;}
+}
+
+
+.header-container{
+
+  align-items: flex-end;
+  margin: 0 auto;
+  @include flex;
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.button-nav{
+  display: none;
+  @media screen and (max-width: $tablet-width){
+    display: block;
+  }
+}
+.logo-link{
+  height: 100px;
   z-index: 5;
 }
-.page-header{
-    max-height: 800px;
-    width: 620px;
-    padding: 0 15px;
+.logo img{
+  width: 250px;
+  z-index: 5;
+}
+.site-list{
+  @include flex;
+    column-gap: 30px;
+    font-size: 17px;
+    list-style: none;
+    padding: 0;
+    z-index: 5;
+   @include mediaTablet;
+}
+.header-bottom{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  padding-bottom: 30px;
+  width:auto;
+  @media screen and (max-width: $tablet-width){
+    width: 350px;
+    margin-left: 200px;
+  }
+}
+.hours {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  color: $heading-color;
+  font-weight: 600;
+  @media screen and (max-width: $tablet-width){
+    font-size: 14px;}
+}
+.hours::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("../img/calendar.svg");
+  left: -30px;
+  top: -1px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+.phone-number{
+  position: relative;
+  margin: 0;
+  font-size: 24px;
+  color: $heading-color;
+  @media screen and (max-width: $tablet-width){
+    font-size: 20px;}
+}
+.phone-number::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-phone.svg");
+  left: -35px;
+  top: 4px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 20px;
+  margin-left: 680px;
+  //*height: 165px;*//
+  @media screen and (max-width: $tablet-width){
+    margin-left: 400px;}
+}
+.about-site {
+color: $heading-color;
+font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 20px;
+@media screen and (max-width: $tablet-width){
+  font-size: 25px;}
+}
+.info{
+  color: $text-color;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0 auto;
+  @media screen and (max-width: $tablet-width){
+    font-size: 12px;
+  width: 350px;}
 }
 .slider-container {
-  position: relative;
-  min-height: 650px;
-  width: 560px;
+  position: absolute;
   margin: 0 auto;
   overflow: hidden;
-  top: -410px;
+  top: 0;
+  @media screen and (max-width: $tablet-width){
+    width: 350px;}
 }
 
 .slider {
+  position:relative;
+  width: 100%;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -42,6 +170,8 @@
   border: none;
   font-size: 50px;
   color: white;
+  @media screen and (max-width: $tablet-width){
+    top: 30%;}
 }
 
 .prev-button {
@@ -50,97 +180,4 @@
 
 .next-button {
   right: 10px;
-}
-.header-container{
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  @include flex;
-  align-items: center;
-}
-.main-nav{
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-}
-
-.site-list{
-  @include flex;
-    column-gap: 30px;
-    font-size: 16px;
-    list-style: none;
-    margin-left: 450px;
-    padding: 0;
-}
-.header-bottom{
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 600px;
-  padding: 0px;
-  margin-left: 550px;
-  padding-bottom: 30px;
-}
-.hours {
-  position: relative;
-  margin: 0;
-  font-size: 16px;
-  color: $heading-color;
-  font-weight: 600;
-}
-.hours::before {
-  display: block;
-  position: absolute;
-  content: "";
-  background-image: url("../img/calendar.svg");
-  left: -30px;
-  top: -1px;
-  width: 21px;
-  height: 21px;
-  background-repeat: no-repeat;
-  background-position: 0;
-}
-.phone-number{
-  position: relative;
-  margin: 0;
-  font-size: 24px;
-  color: $heading-color;
-}
-.phone-number::before {
-  display: block;
-  position: absolute;
-  content: "";
-  background-image: url("../img/icon-phone.svg");
-  left: -35px;
-  top: 4px;
-  width: 21px;
-  height: 21px;
-  background-repeat: no-repeat;
-  background-position: 0;
-}
-.name {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  width: 500px;
-  margin-left: 680px;
-  height: 165px;
-}
-.about-site {
-color: $heading-color;
-font-size: 50px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-bottom: 20px;
-}
-.info{
-  max-width: 1290px;
-  color: $text-color;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-  margin: 0 auto;
 }
