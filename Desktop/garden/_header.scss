@@ -4,17 +4,19 @@
   margin: 0 auto;
   overflow: hidden;
   @media screen and (max-width: $tablet-width){
-    width: 999px;}
+    max-width: 999px;}
 }
 
 
 .page-header{
     box-sizing: border-box;
-    height:auto;
+    height: 800px;
     padding: 0 15px;
     overflow: visible;
     @media screen and (max-width: $tablet-width){
-      width: 450px;}
+      width: auto;
+    padding: 0 15px;
+  height: 700px}
 }
 
 
@@ -32,7 +34,9 @@
 .button-nav{
   display: none;
   @media screen and (max-width: $tablet-width){
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
   }
 }
 .logo-link{
@@ -61,9 +65,12 @@
   padding-bottom: 30px;
   width:auto;
   @media screen and (max-width: $tablet-width){
-    width: 350px;
-    margin-left: 200px;
+    display: flex;
+    align-items: flex-end;
   }
+  @media screen and (max-width: 800px){
+    font-size: 14px;
+  padding-bottom: 10px;}
 }
 .hours {
   position: relative;
@@ -114,7 +121,15 @@
   margin-left: 680px;
   //*height: 165px;*//
   @media screen and (max-width: $tablet-width){
-    margin-left: 400px;}
+    margin-left: 590px;
+    padding-top: 0;
+  }
+    @media screen and (max-width: 850px){
+      margin-left: 70%;
+      word-wrap: break-word;
+      padding-top: 0;
+      padding-bottom: 10px;
+   }
 }
 .about-site {
 color: $heading-color;
@@ -123,8 +138,9 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 margin-bottom: 20px;
-@media screen and (max-width: $tablet-width){
-  font-size: 25px;}
+@media screen and (max-width: 850px){
+  font-size: 22px;
+text-align: center;}
 }
 .info{
   color: $text-color;
@@ -133,9 +149,11 @@ margin-bottom: 20px;
   font-weight: 400;
   line-height: 32px;
   margin: 0 auto;
-  @media screen and (max-width: $tablet-width){
-    font-size: 12px;
-  width: 350px;}
+  width:auto;
+  @media screen and (max-width:850px){
+    font-size: 15px;
+     line-height: 20px;
+     text-align: center;}
 }
 .slider-container {
   position: absolute;
@@ -143,7 +161,9 @@ margin-bottom: 20px;
   overflow: hidden;
   top: 0;
   @media screen and (max-width: $tablet-width){
-    width: 350px;}
+    width: 550px;}
+    @media screen and (max-width: 800px){
+      width: 60%}
 }
 
 .slider {
@@ -170,8 +190,6 @@ margin-bottom: 20px;
   border: none;
   font-size: 50px;
   color: white;
-  @media screen and (max-width: $tablet-width){
-    top: 30%;}
 }
 
 .prev-button {

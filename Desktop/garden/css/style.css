@@ -6,8 +6,11 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;
 */
+.catalog-wrapper {
+  text-align: center;
+}
+
 .catalog {
-  padding-top: 300px;
   text-align: center;
 }
 
@@ -54,19 +57,21 @@ a:hover {
 }
 @media screen and (max-width: 999px) {
   .wrapper {
-    width: 999px;
+    max-width: 999px;
   }
 }
 
 .page-header {
   box-sizing: border-box;
-  height: auto;
+  height: 800px;
   padding: 0 15px;
   overflow: visible;
 }
 @media screen and (max-width: 999px) {
   .page-header {
-    width: 450px;
+    width: auto;
+    padding: 0 15px;
+    height: 700px;
   }
 }
 
@@ -88,7 +93,9 @@ a:hover {
 }
 @media screen and (max-width: 999px) {
   .button-nav {
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
   }
 }
 
@@ -129,8 +136,14 @@ a:hover {
 }
 @media screen and (max-width: 999px) {
   .header-bottom {
-    width: 350px;
-    margin-left: 200px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header-bottom {
+    font-size: 14px;
+    padding-bottom: 10px;
   }
 }
 
@@ -194,7 +207,16 @@ a:hover {
 }
 @media screen and (max-width: 999px) {
   .name {
-    margin-left: 400px;
+    margin-left: 590px;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .name {
+    margin-left: 70%;
+    word-wrap: break-word;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -206,9 +228,10 @@ a:hover {
   line-height: normal;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 850px) {
   .about-site {
-    font-size: 25px;
+    font-size: 22px;
+    text-align: center;
   }
 }
 
@@ -219,11 +242,13 @@ a:hover {
   font-weight: 400;
   line-height: 32px;
   margin: 0 auto;
+  width: auto;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 850px) {
   .info {
-    font-size: 12px;
-    width: 350px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
   }
 }
 
@@ -235,7 +260,12 @@ a:hover {
 }
 @media screen and (max-width: 999px) {
   .slider-container {
-    width: 350px;
+    width: 550px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .slider-container {
+    width: 60%;
   }
 }
 
@@ -265,12 +295,6 @@ a:hover {
   font-size: 50px;
   color: white;
 }
-@media screen and (max-width: 999px) {
-  .prev-button,
-  .next-button {
-    top: 30%;
-  }
-}
 
 .prev-button {
   left: 10px;
@@ -291,6 +315,13 @@ a:hover {
   list-style: none;
   padding-left: 0;
   max-width: 1290px;
+  gap: 20px;
+}
+@media screen and (max-width: 900px) {
+  .variety {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .hits {
@@ -300,6 +331,12 @@ a:hover {
   line-height: 22px;
   font-weight: 500;
   text-align: center;
+  width: 700px;
+}
+@media screen and (max-width: 900px) {
+  .hits {
+    width: 300px;
+  }
 }
 
 .hits::before {
@@ -316,22 +353,35 @@ a:hover {
 
 .catalog_image {
   width: 260px;
+  margin: 0 5px;
 }
 
 .catalog_item {
   color: #000000;
   line-height: 22px;
   font-size: 19px;
-  margin-top: 35px;
+  margin-top: 55px;
+}
+@media screen and (max-width: 999px) {
+  .catalog_item {
+    font-size: 17px;
+    margin-top: 55px;
+  }
 }
 
 .price-main {
   font-size: 29px;
   height: 40px;
+  width: 240px;
   color: rgb(9, 9, 9);
   position: absolute;
   top: 270px;
-  left: 25px;
+  left: 7px;
+}
+@media screen and (max-width: 999px) {
+  .price-main {
+    font-size: 18px;
+  }
 }
 
 .price {
@@ -339,18 +389,36 @@ a:hover {
   margin-right: 30px;
   font-size: 30px;
 }
+@media screen and (max-width: 999px) {
+  .price {
+    font-size: 22px;
+    margin-right: 2px;
+  }
+}
 
 .price::after {
   display: block;
   position: absolute;
   top: -2px;
-  left: 63px;
+  left: 77px;
   right: 4px;
   width: 28px;
   height: 35px;
   content: "";
   background-image: url("../img/ruble min.png");
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 999px) {
+  .price::after {
+    left: 48px;
+    width: 24px;
+    height: 27px;
+    top: 8px;
+  }
+}
+
+.price-main-wrapper {
+  display: flex;
 }
 
 .features-description {
