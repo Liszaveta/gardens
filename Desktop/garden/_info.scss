@@ -1,16 +1,28 @@
+video{
+    width: 65%;
+    height: 460px;
+}
 .features-description{
 font-size: 47px;
+.main-information{
+    height: auto;
+}
 }
 .video--description{
     display: flex;
 }
 .features-list{
     list-style: none;
-}
+    margin: 0;
+    width: 30%;}
+
 .feature-text{
     font-size: 15px;
     position: relative;
     text-align: center;
+    @media screen and (max-width: $tablet-width){
+        font-size: 12px;
+       }
 }
 .feature-text::before{
     display: block;

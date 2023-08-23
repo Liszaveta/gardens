@@ -19,19 +19,27 @@
     top: 60px;
     right: 85px;
     padding: 10px 13px;
-    width: 250px;
+    width: 200px;
     max-height: 305px;
     background-color: $heading-color;
     color:aliceblue;
     border-radius: 15px;
+    font-size: 14px;
+    @include mediaTablet;
 }
 .street{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
+    @media screen and (max-width: $tablet-width){
+        font-size: 11px;
+       }
 }
 .num{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
+    @media screen and (max-width: $tablet-width){
+        font-size: 11px;
+       }
 }
 .footer-social{
     @include flex;

@@ -1,6 +1,8 @@
 .hit{
     max-width: 1290px;
     padding: 80px 0;
+    @media screen and (max-width: $tablet-width){
+    padding: 100px;}
 }
 .variety{
 @include flex;
@@ -8,9 +10,11 @@ list-style: none;
 padding-left: 0;
 max-width: 1290px;
 gap: 20px;
-@media screen and (max-width: 900px){
+@media screen and (max-width: $tablet-width){
     display: flex;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+justify-content: space-around;}
+
 }
 .hits{
     position: relative;
@@ -19,9 +23,9 @@ gap: 20px;
     line-height: 22px;
     font-weight: 500;
     text-align: center;
-    width: 700px;
-    @media screen and (max-width: 900px){
-        width: 300px;}
+    width: 250px;
+    @media screen and (max-width: $tablet-width){
+        width: auto;}
     }
     .hits::before{ 
         display: block;
@@ -34,6 +38,24 @@ gap: 20px;
         background-image: url("../img/хит2.png");
         background-repeat: no-repeat;
     } 
+.hits::after{
+    display: block;
+    position: absolute;
+    top: 267px;
+    left: 85px;
+    right: 4px;
+    width: 28px;
+    height: 35px;
+    content: "";
+    background-image: url("../img/ruble min.png");
+    background-repeat: no-repeat;
+    @media screen and (max-width: $tablet-width){
+        left: 103px;
+        width:24px;
+        height: 27px;
+        top: 272px;
+        background-image: url("../img/ruble mini.png");}
+}
 .catalog_image {
     width: 260px;
     margin: 0 5px;
@@ -64,25 +86,9 @@ gap: 20px;
     font-size: 30px;
     @media screen and (max-width: $tablet-width){
         font-size: 22px;
-        margin-right: 2px;}
+        margin-right: 18px;}
 }
-.price::after {
-    display: block;
-    position: absolute;
-    top: -2px;
-    left: 77px;
-    right: 4px;
-    width: 28px;
-    height: 35px;
-    content: "";
-    background-image: url("../img/ruble min.png");
-    background-repeat: no-repeat;
-    @media screen and (max-width: $tablet-width){
-        left: 48px;
-        width:24px;
-        height: 27px;
-        top: 8px;}
-}
+
 .price-main-wrapper{
     display: flex;
 }
