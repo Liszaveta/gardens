@@ -44,6 +44,9 @@
 .footer-social{
     @include flex;
     align-items: center;
+    @media screen and (max-width: $tablet-width-min){
+        flex-direction: column;
+       }
 }
 .media{
     @include flex;
@@ -55,4 +58,7 @@
 .documents{
     max-width: 372px;
     font-size: 12px;
+    @media screen and (max-width: $tablet-width-min){
+        padding: 0 5px;
+       }
 }

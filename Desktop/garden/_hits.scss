@@ -3,6 +3,8 @@
     padding: 80px 0;
     @media screen and (max-width: $tablet-width){
     padding: 100px;}
+    @media screen and (max-width: $mobile-width){
+        padding: 0;}
 }
 .variety{
 @include flex;

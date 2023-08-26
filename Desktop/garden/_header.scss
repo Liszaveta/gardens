@@ -24,6 +24,7 @@
   align-items: flex-end;
   margin: 0 auto;
   @include flex;
+  padding-top: 15px;
 }
 .main-nav{
   display: flex;
@@ -40,12 +41,15 @@
   }
 }
 .logo-link{
-  height: 100px;
+  height: 77px;
   z-index: 5;
 }
 .logo img{
   width: 250px;
   z-index: 5;
+  @media screen and (max-width: $tablet-width-min){
+    width: 165px;
+ }
 }
 .site-list{
   @include flex;
@@ -63,13 +67,27 @@
   padding: 0px;
   padding-bottom: 30px;
   width:auto;
-  @media screen and (max-width: $tablet-width){
-    display: flex;
-    align-items: flex-end;
-  }
   @media screen and (max-width: 800px){
     font-size: 14px;
   padding-bottom: 10px;}
+  @media screen and (max-width: $mobile-width){
+    display:none;}
+}
+.header-bottom-mobile{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  padding-bottom: 30px;
+  width:auto;
+  display: none;
+  @media screen and (max-width: $mobile-width){
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    align-items: center;
+   }
 }
 .hours {
   position: relative;
@@ -78,7 +96,7 @@
   color: $heading-color;
   font-weight: 600;
   @media screen and (max-width: $tablet-width){
-    font-size: 14px;}
+    font-size: 11px;}
 }
 .hours::before {
   display: block;
@@ -98,7 +116,7 @@
   font-size: 24px;
   color: $heading-color;
   @media screen and (max-width: $tablet-width){
-    font-size: 20px;}
+    font-size: 16px;}
 }
 .phone-number::before {
   display: block;
@@ -121,6 +139,7 @@
   @media screen and (max-width: $tablet-width){
     margin-left: 590px;
     padding-top: 0;
+    align-items: flex-end;
   }
   @media screen and (max-width: 1100px){
     margin-left: 600px;
@@ -131,6 +150,15 @@
       padding-top: 0;
       padding-bottom: 10px;
    }
+   @media screen and (max-width: $tablet-width-min){
+    margin-left: 0;
+    margin-top: 55%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+ }
+ @media screen and (max-width: $mobile-width){
+  margin-top: 70%};
 }
 .about-site {
 color: $heading-color;
@@ -173,7 +201,8 @@ text-align: center;}
       width: 500px;}
     @media screen and (max-width: 850px){
       width: 60%}
-
+      @media screen and (max-width: $mobile-width){
+        width: 70%}
 }
 
 .slider {
@@ -200,6 +229,8 @@ text-align: center;}
   border: none;
   font-size: 50px;
   color: white;
+  @media screen and (max-width: $tablet-width-min){
+    font-size: 30px;}
 }
 
 .prev-button {
