@@ -1,12 +1,13 @@
   .page-header-photo{
-      min-height: 100px;
-      width: 100%;
-      background-image: url("../img/backgroound.png");
+    background-image: url("../img/backgroound.png");
       background-repeat: repeat;
-      padding: 0 15px;
-  }
- 
-
+      box-sizing: border-box;
+    padding: 0 15px;
+    overflow: visible;
+    @media screen and (max-width: $tablet-width){
+      width: auto;
+    padding: 0 15px;}
+    }
   
   .site-list-2{
     @include flex;
@@ -14,6 +15,17 @@
       font-size: 20px;
       list-style: none;
       padding-left: 15px;
+  }
+  .logo img{
+    width: 250px;
+    z-index: 5;
+    @media screen and (max-width: $tablet-width-min){
+      width: 165px;
+   }
+  }
+  .logo-link{
+    height: 77px;
+    z-index: 5;
   }
   .name-2 {
     display: flex;
@@ -35,7 +47,9 @@ img{
 .catalog-items{
 	display: flex;
 	flex-wrap: wrap;
-  padding-left: 60px;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: center;
 }
 .catalog-item{
 	width: 218px;
@@ -47,7 +61,15 @@ img{
 	text-align: center;
 	border: 1px solid #cccc;
 }
-
+.video-gallery{
+  margin-right: 50px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 13px;
+	vertical-align: top;
+	text-align: center;
+	border: 1px solid #cccc;
+}
 .discount{
   color: grey;
   text-decoration-line: line-through;

@@ -1,20 +1,17 @@
   .page-header-inner_page{
-      min-height: 650px;
-      width: 100%;
-      background-color: $color;
-      padding: 0 15px;
-  }
-  .header-container-inner_page{
-    width: 1200px;
+    height: auto;
     padding: 0 15px;
-    margin: 0 auto;
-    @include flex;
-    align-items: center;
+    overflow: visible;
+    @media screen and (max-width: $tablet-width){
+      width: auto;
+    padding: 0 15px;}
   }
-
 .price_catalog{
     padding-left: 50px;
     padding-bottom: 20px;
+    @media screen and (max-width: $tablet-width){
+        width: 60%;
+      }
 }
 .footer-social{
     @include flex;
