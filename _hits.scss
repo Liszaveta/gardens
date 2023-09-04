@@ -1,0 +1,97 @@
+.hit{
+    max-width: 1290px;
+    padding: 80px 0;
+    @media screen and (max-width: $tablet-width){
+    padding: 100px;}
+    @media screen and (max-width: $mobile-width){
+        padding: 0;}
+}
+.variety{
+@include flex;
+list-style: none;
+padding-left: 0;
+max-width: 1290px;
+gap: 20px;
+@media screen and (max-width: $tablet-width){
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-around;}
+
+}
+.hits{
+    position: relative;
+    word-wrap: normal;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+    width: 250px;
+    @media screen and (max-width: $tablet-width){
+        width: auto;}
+    }
+    .hits::before{ 
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 60px;
+        height: 60px;
+        content: "";
+        background-image: url("../img/хит2.png");
+        background-repeat: no-repeat;
+    } 
+.hits::after{
+    display: block;
+    position: absolute;
+    top: 267px;
+    left: 85px;
+    right: 4px;
+    width: 28px;
+    height: 35px;
+    content: "";
+    background-image: url("../img/ruble min.png");
+    background-repeat: no-repeat;
+    @media screen and (max-width: $tablet-width){
+        left: 103px;
+        width:24px;
+        height: 27px;
+        top: 272px;
+        background-image: url("../img/ruble mini.png");}
+}
+.catalog_image {
+    width: 260px;
+    margin: 0 5px;
+}
+.catalog_item {
+    color: #000000;
+    line-height: 22px;
+    font-size: 19px;
+    margin-top: 55px;
+    @media screen and (max-width: $tablet-width){
+        font-size: 17px;
+        margin-top: 55px;}
+}
+.price-main {
+    font-size: 29px;
+    height: 40px;
+    width: 240px;
+    color: rgb(9, 9, 9);
+    position: absolute;
+    top: 270px;
+    left: 7px;
+    @media screen and (max-width: $tablet-width){
+        font-size: 18px;}
+}
+.price{
+    padding: 0;
+    margin-right: 30px;
+    font-size: 30px;
+    @media screen and (max-width: $tablet-width){
+        font-size: 22px;
+        margin-right: 18px;}
+}
+
+.price-main-wrapper{
+    display: flex;
+}
+

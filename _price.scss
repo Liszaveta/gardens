@@ -1,0 +1,32 @@
+  .page-header-inner_page{
+    height: auto;
+    padding: 0 15px;
+    overflow: visible;
+    @media screen and (max-width: $tablet-width){
+      width: auto;
+    padding: 0 15px;}
+  }
+.price_catalog{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    height: 800px;
+}
+.file{
+  list-style:inside;
+  font-size: 25px;
+}
+.footer-social{
+    @include flex;
+    align-items: center;
+}
+.media{
+    @include flex;
+    list-style: none;
+    min-width: 180px;
+    padding: 0;
+}
+
+.documents{
+    max-width: 372px;
+    font-size: 12px;
+}

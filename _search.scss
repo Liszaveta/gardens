@@ -1,0 +1,15 @@
+.search-model{
+    position: relative;
+}
+.icon_close::before{
+    display: block;
+  position: absolute;
+  content: "";
+  background-image: url("../img/search 1.png");
+  left: -30px;
+  top: -1px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: 0;
+}

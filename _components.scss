@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,500;1,100&family=Work+Sans:wght@400;500&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+.catalog-wrapper{
+    text-align: center;
+    @media screen and (max-width: $tablet-width-min){
+        padding-top: 15px;
+      }
+}
+.catalog{
+    text-align: center;
+}
+.button-shop{
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    @media screen and (max-width: $tablet-width-min){
+        font-size: 26px;
+      }
+}
+.button-shop::after{
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 580px;
+    width: 60px;
+    height: 55px;
+    content: "";
+    background-image: url("../img/plant 1.png");
+    background-repeat: no-repeat;
+    @media screen and (max-width: $tablet-width-min){
+        left: 375px;
+      }
+      @media screen and (max-width: $mobile-width){
+        display: none;
+      }
+}
+@mixin mediaTablet{
+    @media screen and (max-width: $tablet-width){
+        display: none;
+      }
+}
+.no-scroll{
+    overflow-y: hidden;
+}
+
+
